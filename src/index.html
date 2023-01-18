@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puzzle Captcha</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="verification">
+      <p class="title">拼图验证</p>
+      <p class="tip"></p>
+
+      <!-- 拼图区 -->
+      <div class="check-wrapper">
+        <!-- 目标插槽 -->
+        <div class="check-target"></div>
+
+        <!-- 拼图 -->
+        <div class="check-box"></div>
+
+        <!-- 成功 -->
+        <div class="check-state">
+          <img src="https://cos.rayjason.cn/images/check-ok.svg" alt="check ok"></img>
+          <p>验证成功</p>
+          <button type="button" class="resetButton">确认</button>
+        </div>
+      </div>
+
+      <!-- 拖动区 -->
+      <div class="drag-wrapper">
+        <p class="drag-tip">
+          <span>拖动按钮完成上方拼图验证</span>
+        </p>
+
+        <!-- 已拖过的进度条 -->
+        <div class="drag-progress"></div>
+        <!-- 拖动滑块 -->
+        <div class="drag-box"></div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
