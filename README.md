@@ -16,38 +16,36 @@
 
 组件垂直布局，上为拼图区，下为拖动条。拼图将覆盖在插槽上，层级更高；进度条在拖动滑块左边，将覆盖在提示文字上方。因此结构如下：
 ```HTML
-<div>
-  <div class="verification">
-    <p class="title">拼图验证</p>
-    <p class="tip"></p>
+<div class="verification">
+  <p class="title">拼图验证</p>
+  <p class="tip"></p>
 
-    <!-- 拼图区 -->
-    <div class="check-wrapper">
-      <!-- 目标插槽 -->
-      <div class="check-target"></div>
+  <!-- 拼图区 -->
+  <div class="check-wrapper">
+    <!-- 目标插槽 -->
+    <div class="check-target"></div>
 
-      <!-- 拼图 -->
-      <div class="check-box"></div>
+    <!-- 拼图 -->
+    <div class="check-box"></div>
 
-      <!-- 成功 -->
-      <div class="check-state">
-        <img src="https://cos.rayjason.cn/images/check-ok.svg" alt="check ok"></img>
-        <p>验证成功</p>
-        <button type="button" class="resetButton">确认</button>
-      </div>
+    <!-- 成功 -->
+    <div class="check-state">
+      <img src="https://cos.rayjason.cn/images/check-ok.svg" alt="check ok"></img>
+      <p>验证成功</p>
+      <button type="button" class="resetButton">确认</button>
     </div>
+  </div>
 
-    <!-- 拖动区 -->
-    <div class="drag-wrapper">
-      <p class="drag-tip">
-        <span>拖动按钮完成上方拼图验证</span>
-      </p>
+  <!-- 拖动区 -->
+  <div class="drag-wrapper">
+    <p class="drag-tip">
+      <span>拖动按钮完成上方拼图验证</span>
+    </p>
 
-      <!-- 已拖过的进度条 -->
-      <div class="drag-progress"></div>
-      <!-- 拖动滑块 -->
-      <div class="drag-box"></div>
-    </div>
+    <!-- 已拖过的进度条 -->
+    <div class="drag-progress"></div>
+    <!-- 拖动滑块 -->
+    <div class="drag-box"></div>
   </div>
 </div>
 ```
